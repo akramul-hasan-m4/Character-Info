@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/pixel_3dp"
+    app:cardElevation="@dimen/pixel_3dp"
+    app:cardUseCompatPadding="true"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/pixel_3dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_character_img"
+            android:layout_width="@dimen/pixel_60dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="@dimen/pixel_60dp"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"
+                tools:text="Lucius Malfoy"/>
+
+            <TextView
+                android:id="@+id/tv_species"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="human"/>
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Male"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

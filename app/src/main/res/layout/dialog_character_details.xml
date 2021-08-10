@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/purple_700"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:background="@color/purple_700"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="@string/character_full_info"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:backgroundTint="@color/purple_700"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_baseline_close_24"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_character_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".4"
+            android:background="@color/purple_500"
+            android:text="@string/name"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".6"
+            tools:text="Name"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".4"
+            android:background="@color/purple_500"
+            android:text="@string/species"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_species"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".6"
+            tools:text="Human"
+            android:padding="5dp"
+            android:background="@android:color/white"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".4"
+            android:background="@color/purple_500"
+            android:text="@string/gender"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".6"
+            tools:text="Male"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".4"
+            android:background="@color/purple_500"
+            android:text="@string/house"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_house"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".6"
+            tools:text="Slytherin"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".4"
+            android:background="@color/purple_500"
+            android:text="@string/date_of_birth"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_dob"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".6"
+            tools:text="31-12-1926"
+            android:padding="5dp"
+            android:background="@android:color/white"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".4"
+            android:background="@color/purple_500"
+            android:text="@string/year_of_birth"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_yob"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".6"
+            tools:text="1980"
+            android:padding="5dp"
+            android:background="@android:color/white"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".4"
+            android:background="@color/purple_500"
+            android:text="@string/ancestry"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_ancestry"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".6"
+            tools:text="half-blood"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".4"
+            android:background="@color/purple_500"
+            android:text="@string/eye_colour"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_eye_color"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".6"
+            tools:text="Black"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".4"
+            android:background="@color/purple_500"
+            android:text="@string/hair_colour"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_hair_color"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".6"
+            tools:text="Red"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".4"
+            android:background="@color/purple_500"
+            android:text="@string/actor"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_actor"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".6"
+            tools:text="Ralph Fiennes"
+            android:padding="5dp"
+            android:background="@android:color/white"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".4"
+            android:background="@color/purple_500"
+            android:text="@string/wand_core"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_wand_core"
+            android:layout_width="@dimen/pixel_0dp"
+            android:layout_weight=".6"
+            tools:text="Ralph Fiennes"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

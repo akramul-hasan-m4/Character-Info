@@ -1,0 +1,1 @@
+# Character Info sample app using MVVM design pattern
